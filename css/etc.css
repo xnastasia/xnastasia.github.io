@@ -1,0 +1,105 @@
+/*
+
+etc
+
+*/
+
+
+/*  FOLD  */
+
+.accordion-toggle {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.default {
+  display: block;
+}
+
+
+/*  FADE   */
+
+.page {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in .3s;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in .3s;
+  animation: fadeIn ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .3s;
+  -moz-animation-duration: .3s;
+  animation-duration: .3s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*  layout  */
+
+.sitename-header.row {
+  padding-bottom: 3rem;
+}
+
+.entry-header {
+  margin-top: .4rem;
+  border-top: 1px solid #1c1c1c;
+}
+
+.entry-layer.row {
+  padding-bottom: 2rem;
+}
+
+.files h2 {
+  display: inline-block;
+}
+
+.files {
+  word-spacing: .5rem;
+}
+
+.thetag-big h2,
+.blogtags h2,
+.blogtags li,
+.blogrecent li,
+.blogarchive li,
+.blogarchiveyears li,
+.navigation li {
+  display: inline-block;
+  word-spacing: .5rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

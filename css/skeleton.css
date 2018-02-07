@@ -1,0 +1,795 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+
+
+/*
+
+The way "Grids" appears For devices larger than 0px to 300px
+√ Files are hidden
+
+*/
+
+@media (min-width: 0px) {
+  .container {
+    width: 98%;
+  }
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%;
+  }
+  .two.columns {
+    width: 13.3333333333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.6666666667%;
+  }
+  .five.columns {
+    width: 39.3333333333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+  .eight.columns {
+    width: 65.3333333333%;
+  }
+  .nine.columns {
+    width: 74.0%;
+  }
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+  .eleven.columns {
+    width: 91.3333333333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+  /* SHOW ME THIS THIS STILL...*/
+  .searchbar.two.columns:last-child,
+  .lastupdate.two.columns:last-child {
+    width: 13.3333333333%;
+    display: block;
+  }
+  .title,
+  .four.columns:first-child {
+    width: 42%;
+  }
+  .contentpad-left,
+  .date,
+  .catalog,
+  .location,
+  .author,
+  .one.column {
+    width: 13.3333333333%;
+  }
+  .two.columns:first-child {
+    width: 13.3333333333%;
+  } 
+  .files.two.columns {
+    display: none;
+  }
+  .commentary.nine.columns {
+    width: 65.3333333333%;
+  }
+  /*.thetag-big,*/
+  .two.columns:last-child {
+    display: none;
+  }
+
+  .one.column.contentpad-left { }
+  .one.column.contentpad-right { display: none;
+  }
+  .ten.columns.contentget {
+    width: 82.6666666667%;
+  }
+}
+
+
+/* The way "Grids" appears for devices larger than 480px.
+√ Files are displayed
+*/
+
+@media (max-width: 720px) {
+  .one.column.contentpad-left {
+    display: none;
+    /*border: 1px solid red;*/
+  }
+  .one.column.contentpad-right {
+    /*display: none;*/
+    /*border: 1px solid pink;*/
+  }
+  .ten.columns.contentget {
+    /*width: 82.6666666667%;*/
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .ten.columns.contentget {
+    width: 82.6666666667%;
+  }
+  .contentpad-left,
+  .catalog,
+  .infinity,
+  .one.column:first-child {
+    /*1*/
+    width: 4.66666666667%;
+    /*2*/
+    /*width: 13.3333333333%;*/
+    /*border: 1px solid blue;*/
+  }
+  .content.eleven.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .title,
+  .four.columns:first-child {
+    width: 22%;
+  }
+  .files.two.columns:last-of-type {
+    display: block;
+    width: 13.3333333333%;
+  }
+  .thetag-big.two.columns {
+    display: block;
+    width: 13.3333333333%;
+    /*border: 1px solid blue;*/
+  }
+
+  .commentary.nine.columns {
+    width: 74.0%;
+    /*border: 1px solid blue;*/
+  }
+  .container {
+    width: 98%;
+    /*border: 1px solid pink;*/
+  }
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%;
+  }
+  .two.columns {
+    width: 13.3333333333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.6666666667%;
+  }
+  .five.columns {
+    width: 39.3333333333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+  .eight.columns {
+    width: 65.3333333333%;
+  }
+  .nine.columns {
+    width: 74.0%;
+  }
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+  .eleven.columns {
+    width: 91.3333333333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%;
+  }
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+  }
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%;
+  }
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%;
+  }
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%;
+  }
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%;
+  }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%;
+  }
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%;
+  }
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-weight: 100;
+  /*important*/
+  font-family: 'Berthold Akzidenz-Grotesk';
+  color: #1c1c1c;
+  -webkit-text-size-adjust: none;
+  /*important*/
+}
+
+@font-face {
+  font-family: 'Berthold Akzidenz-Grotesk';
+  src: url('font/AkzidenzGroteskBE-Light.eot');
+  src: url('font/AkzidenzGroteskBE-Light.eot?#iefix') format('embedded-opentype'), url('font/AkzidenzGroteskBE-Light.woff') format('woff'), url('font/AkzidenzGroteskBE-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* tablet */
+
+@media (max-width: 800px) {
+  body,
+  p,
+  ul,
+  input.searchbox-text,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.0em;
+    line-height: 1.2em;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 1024px) {
+  body,
+  p,
+  ul,
+  input.searchbox-text,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: 100;
+  }
+}
+
+
+/*  Desktop */
+
+@media (min-width: 1024px) {
+  body,
+  p,
+  ul,
+  input.searchbox-text,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 1400px) {
+  body,
+  p,
+  ul,
+  input.searchbox-text,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 100;
+  }
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  color: #1c1c1c;
+}
+
+a:hover {
+  color: red;
+}
+
+a,
+img {
+  border: none;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 2.8rem;
+  padding: 0 6px;
+  color: #ccc;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 100;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #222;
+  border-color: #fff;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #ffffff;
+  border-color: #1EAEDB;
+}
+
+input.searchbox-text {
+  color: 000;
+}
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[name="email"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  padding: 1rem 0 0 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: inherit;
+  color: #000;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[name="email"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 24%;
+  width: 100%;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+
+/* FF 4-18 */
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+
+/* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+
+/* IE 10+ */
+
+input[name="email"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 1px solid #fc0f0f;
+  outline: 0;
+  width: 100%;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 100;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 100%;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+code {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background: #faf8f0;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+th,
+td {
+  font-weight: 100;
+  padding: 0em 3rem;
+  text-align: left;
+  padding-bottom: 2rem;
+  vertical-align: top;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.0rem;
+}
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 9rem;
+  border-width: 0;
+  width: 100%;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Self Clearing Goodness */
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
